@@ -137,9 +137,7 @@ section p{
 margin:0px;
 text-indent:2%;
 }
-p.kolumny1{column-count:1;}
-p.kolumny2{column-count:2;column-gap:20px;}
-p.kolumny3{column-count:3;column-gap:15px;}
+
 
 
 
