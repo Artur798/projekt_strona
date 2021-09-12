@@ -1,0 +1,240 @@
+
+body{
+width:100%;
+margin:0px;
+padding:0px;
+}
+
+
+.target{
+width:100px;
+height:100px;
+background-color:red;
+z-index:100;
+}
+
+
+.panele{
+  background: rgba(0,0,0,0.8);
+  height:100%;
+  position:fixed;
+  width: 100%;
+  left: 0;
+  top:0;
+  display:none;
+  color:#fff;
+  overflow: overlay;
+}
+.panele ul{
+  text-align: center;
+  list-style: none;
+  line-height: 2.5rem;
+  padding:10%;
+  margin:0;
+}
+.panele li{
+  font-size: 1.5rem;
+  text-align:center; 
+}
+.panele li a{
+  color:#fff;
+  text-decoration: none;
+}
+.panele li a:hover{
+  text-decoration: underline;
+}
+.clickme{
+	
+  position: fixed;
+  z-index: 100;
+  left: 0.5%;
+  top:0.5%;
+   
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #bbd;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1, .change .bar2, .change .bar3{
+  background-color: #fff;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
+
+nav{
+background-color:#262626;
+min-height:50px;
+position:sticky;
+margin:0px;
+top:0px;
+
+}
+nav ul,li{
+min-height:50px;
+list-style-type:none;
+text-align:right;
+padding-right:20px;
+margin:0px;
+padding-top:10px;
+}
+
+nav li{
+width:150px;
+font-weight:bold;
+font-family: 'Roboto', sans-serif;
+text-align:center;
+font-size:1.2em;
+display:inline;
+
+}
+
+nav a{
+color:#bbd !important;
+}
+
+nav a:hover{
+color:#eef!important;
+text-align:center
+}
+
+header{
+background-image:url("tlonoc1.jpg");
+height:100vh;
+width:100%;
+background-size:cover;
+display:table;
+background-attachment:fixed
+
+}
+
+section{
+background-color:#262626;/*#b3b3cc;*/
+padding:30px;
+margin:0px;
+color:white;
+border:none;
+}
+
+section h1{ 
+font-size:1.8em;
+}
+
+section p{
+margin:0px;
+text-indent:2%;
+}
+p.kolumny1{column-count:1;}
+p.kolumny2{column-count:2;column-gap:20px;}
+p.kolumny3{column-count:3;column-gap:15px;}
+
+
+
+
+article{
+background-color:#bbc;/*#666699;*/
+color:black;
+padding-bottom:0px;
+padding:50px;
+font-size:1.4em;
+line-height:1.6em;
+}
+
+footer{
+background-color:#262626;/*#b3b3cc;*/
+height:200px;
+text-align:center;
+padding-top:50px;
+color:#bbc;
+padding:1em;
+}
+
+#lodka, #miecze, #chatki, #jeziorko, #lodz{
+	height:100vh;
+	width:100%;
+	background-size:cover;
+	display:table;
+	background-attachment:fixed;
+}
+#kontakt{
+	text-align:center;
+}
+
+#lodka{
+	background-image:url("lodka1.jpg");}
+#miecze{
+	background-image:url("miecze.jpg");}
+#chatki{
+	background-image:url("chatki.jpg");}
+#jeziorko{
+	background-image:url("jeziorko.jpg");}
+#lodz{
+	background-image:url("lodz.jpg");}
+
+
+
+
+.butonik{
+	background-color:#bbd !important;
+	color:#262626 !important;
+	border: .05rem solid #262626 !important;
+	align:center;
+	margin:auto;
+	font-size:1.5rem !important;
+	
+	
+}
+#bunik, #pogoda{
+	background-color:#262626;
+	text-align:center;
+	
+}
+
+.butonik:hover{
+	background-color:#262626 !important;
+	color:#bbc !important;
+	text-decoration:underline !important;
+}
+ .butonik a{
+	color:#262626 !important;
+	text-align:center;
+ }
+ .butonik:hover a{
+	background-color:#262626 !important;
+	color:#bbc !important;
+	text-decoration:underline !important;
+}
+
+#danepog{
+	text-align:center;
+	font-size:1.5rem !important;
+	
+}
+@media only screen and (max-width: 600px) {
+   .butonik{
+	width:100%;
+   }
+  
+  
+}
+
+   
+ 
+
+
+
+
+

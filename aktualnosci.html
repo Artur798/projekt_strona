@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="utf-8" />
+	 <title>Historia Wikingów</title>
+	 <link rel="stylesheet" href="style.css" />
+	 <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+	 
+	<script src="https://code.jquery.com/jquery-1.7.2.min.js" type="text/javascript"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+	
+	
+	<div  class="panele">
+    <ul>
+     <li><a href="index.html">Strona głowna</a></li>
+	 <li><a href="aktualnosci.html">Aktualności</a></li>
+      <li><a href="onas.html">O nas</a></li> 
+      <li><a href="ajax.html">Pogoda</a></li>
+	  <li><a href="kontakt.html">Kontakt</a></li>
+    </ul>
+	</div>
+	<div class="clickme"  onclick="myFunction(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>    
+	</div>
+	<nav>
+		
+ 
+	</nav>
+	
+	
+	<section id="aktualnosci">
+	<h1 id="o1">Aktualnosci</h1>
+		<article>
+	<p class="kolumny1"><p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eget lacinia magna. Aenean sit amet dictum metus, vel vulputate sapien. Vivamus vel dui orci. Nulla fringilla lectus non magna sodales, eu tempor velit ultrices. Mauris dui felis, auctor sed euismod sit amet, posuere in quam. Pellentesque non lacinia dui, nec accumsan libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas iaculis, ligula ac interdum consequat, magna orci efficitur metus, id fringilla tellus mauris sed justo. Quisque mollis ornare dui, ut lacinia lacus euismod eu. Integer turpis nisi, pretium mollis imperdiet sed, tincidunt eu arcu.</p>
+	
+	
+	
+		</article>
+		
+	</section>
+	<header>
+	
+	</header>
+	
+	<footer>
+	 <div class="column col-12">
+  <div class="empty-icon">
+    <i class="icon icon-download" ></i>
+  </div>
+  <p class="empty-title h5">Zdjęcia do pobrania</p>
+  <p class="empty-subtitle">Kliknij przycisk aby rozpocząć pobieranie</p>
+  <div class="empty-action">
+    <button class="butonik btn btn-primary "><a class="rarr" href="zdjecia.rar">Pobierz</a></button>
+	
+  </div>
+</div>
+	</footer>
+ 
+ <script src="js/jquery.js"></script>
+    <script src="js/stickyfill.js"></script>
+		<script>
+		$(".clickme").click(function(){
+	  $(".panele").toggle(1000);
+	});
+	function myFunction(x) {
+		x.classList.toggle("change");
+	}
+	</script>
+    <script>
+        $('.nav').Stickyfill();
+        $(function() {
+            $('a[href*="#"]:not([href="#"])').click(function() {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').stop().animate({
+                            scrollTop: target.offset().top - 70
+                        }, 1000);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+	
+	<script data-style="transparent" data-position="rb" data-size="41" data-arrowtype="ar2" data-bgcolor="rgb(200,200,200)" data-transparency="0.9" src="js/arrow.js"></script>
+	
+</body>
+</html>
+
